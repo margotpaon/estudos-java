@@ -30,7 +30,7 @@ public class CondicionalAula05{
 	    System.out.println("Você terá um desconto de R$"+desconto);
 	}if(salario >= 4664.68){
 	    float desconto = salario * (27.5F/100);
-	    System.out.println("Você terpa um desconto de R$"+desconto);
+	    System.out.println("Você terá um desconto de R$"+desconto);
 	}
 	
 
