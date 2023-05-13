@@ -9,3 +9,28 @@ classificação:
 - Se sexo for M ou F e a idade for infeiro a 18 anos exiba que o alistamento não é permito 
 
 */
+
+
+import java.util.Scanner;
+
+public class CondicionalAula07{
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+
+    System.out.println("Informe o seu sexo (M/F): ");
+    String sexo = input.nextLine();
+
+    System.out.println("Informe a sua idade: ");
+    byte idade = input.nextByte();
+
+    if (sexo.equals("M") && idade >= 18) {
+      System.out.println("Alistamento obrigatório!");
+    } else if (sexo.equals("F") && idade >= 18) {
+      System.out.println("Gostaria de se alistar?");
+    } else {
+      System.out.println("Alistamento não permitido!");
+    }
+
+    input.close();
+  }
+}
